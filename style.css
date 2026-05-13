@@ -427,126 +427,34 @@ html {
     scroll-behavior: smooth;
 }
 
-/* MOBILE */
-@media screen and (max-width: 768px){
+/* =========================
+   PHONE DESKTOP VIEW FIX
+========================= */
 
-    .navbar{
-        padding: 15px 4%;
+body{
+    overflow-x: auto;
+    min-width: 1200px;
+}
+
+/* iPhone / Android scale fix */
+html{
+    zoom: 0.38;
+}
+
+/* Tablet */
+@media screen and (min-width: 600px){
+    html{
+        zoom: 0.55;
+    }
+}
+
+/* Laptop normal */
+@media screen and (min-width: 992px){
+    html{
+        zoom: 1;
     }
 
-    .navbar .logo{
-        font-size: 22px;
+    body{
+        min-width: auto;
     }
-
-    .navbar ul li{
-        margin-left: 15px;
-    }
-
-    .navbar ul li a{
-        font-size: 14px;
-    }
-
-    /* KEEP DESKTOP STYLE */
-    .home{
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        height: 100vh;
-        padding: 110px 5% 40px;
-        gap: 20px;
-        text-align: left;
-    }
-
-    .home-info{
-        width: 55%;
-    }
-
-    .home-info h1{
-        font-size: 22px;
-        line-height: 1.4;
-    }
-
-    .home-info h2{
-        font-size: 16px;
-    }
-
-    .home-info p{
-        font-size: 13px;
-        line-height: 1.6;
-    }
-
-    .home-info .btn-sci{
-        flex-direction: row;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .btn{
-        padding: 8px 20px;
-        font-size: 13px;
-    }
-
-    .home-info .btn-sci .sci a{
-        width: 36px;
-        height: 36px;
-        font-size: 16px;
-        padding: 6px;
-    }
-
-    /* IMAGE KEEP RIGHT SIDE */
-    .home-img .img-box{
-        width: 38vw;
-        height: 38vw;
-        min-width: 180px;
-        min-height: 180px;
-    }
-
-    /* ABOUT */
-    .about-top{
-        flex-direction: row;
-        align-items: center;
-        text-align: left;
-        gap: 30px;
-    }
-
-    .about-img img{
-        width: 180px;
-        height: 180px;
-    }
-
-    .about-intro h2{
-        font-size: 28px;
-    }
-
-    /* SKILLS */
-    .skills-container{
-        grid-template-columns: repeat(2,1fr);
-        gap: 20px;
-    }
-
-    .skills-box{
-        padding: 20px;
-    }
-
-    .skills-box h3{
-        font-size: 20px;
-    }
-
-    /* CREATIONS */
-    .creations-container{
-        grid-template-columns: repeat(2,1fr);
-        gap: 20px;
-    }
-
-    .creations-box{
-        padding: 20px;
-    }
-
-    /* CONTACT */
-    .contact-info{
-        flex-direction: row;
-        gap: 30px;
-        flex-wrap: wrap;
-    }
-
 }
