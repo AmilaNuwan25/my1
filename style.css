@@ -426,3 +426,135 @@ a {
 html {
     scroll-behavior: smooth;
 }
+
+/* =========================
+   PHONE FIT FIX
+========================= */
+
+body{
+    overflow-x: hidden;
+}
+
+/* TABLET */
+@media screen and (max-width: 992px){
+
+    .home{
+        padding: 120px 5% 50px;
+        gap: 30px;
+    }
+
+    .home-info h1{
+        font-size: 30px;
+    }
+
+    .home-img .img-box{
+        width: 38vw;
+        height: 38vw;
+    }
+
+    .skills-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px){
+
+    .navbar{
+        padding: 20px 5%;
+        flex-direction: column;
+    }
+
+    .navbar ul{
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar ul li{
+        margin: 10px 15px;
+    }
+
+    .navbar ul li a{
+        font-size: 16px;
+    }
+
+    .home{
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        height: auto;
+        padding: 160px 5% 80px;
+    }
+
+    .home-info h1{
+        font-size: 26px;
+        line-height: 1.5;
+    }
+
+    .home-info h2{
+        font-size: 18px;
+    }
+
+    .home-info p{
+        font-size: 14px;
+    }
+
+    .home-info .btn-sci{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .home-img .img-box{
+        width: 70vw;
+        height: 70vw;
+    }
+
+    .about{
+        padding: 80px 5%;
+    }
+
+    .about-top{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-intro h2{
+        font-size: 32px;
+    }
+
+    .about-section h3{
+        font-size: 24px;
+    }
+
+    .skills{
+        padding: 80px 5%;
+    }
+
+    .section-title{
+        font-size: 32px;
+    }
+
+    .skills-container{
+        grid-template-columns: 1fr;
+    }
+
+    .creations{
+        padding: 80px 5%;
+    }
+
+    .creations-container{
+        grid-template-columns: 1fr;
+    }
+
+    .contact{
+        padding: 80px 5%;
+    }
+
+    .contact-info{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+}
